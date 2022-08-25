@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@100;200;400;500;600;800;900&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+img{
+	max-width: 100%;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.justify-center{
+	justify-content: center;
+}
+.justify-end{
+	justify-content: flex-end;
+}
+.align-center{
+	align-items: center;
+}
+
+header{
+	background: #F0FFF0;
+	padding: 40px 0;
+	
+}
+.container{
+	width: 1200px;
+	margin: auto;
+}
+.logo{
+	max-width: 20%;
+	flex-basis: 20%;
+}
+.logo a{}
+.logo a img{}
+
+nav{
+	max-width: 80%;
+	flex-basis: 80%;
+}
+nav ul{
+	list-style: none;
+
+}
+nav ul li{}
+nav ul li a{
+	text-decoration: none;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+display: inline-block;
+padding: 8px 18px;
+transition-duration: 0.3s;
+border-radius: 33px;
+}
+
+nav ul li a:hover{
+	background: #21B573;
+
+}
+
+.btn{
+	background: #21B573;
+border-radius: 33px;
+ color:  #FFFFFF;;
+ font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+display: inline-block;
+padding: 8px 18px;
+transition-duration: 0.3s;
+border-radius: 33px;
+text-decoration: none;
+}
+
+.col-1-2{
+	max-width: 50%;
+	flex-basis: 50%;
+}
+.banner-content{
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+.banner-content span{
+	font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FD511A;
+
+}
+.banner-content h1{
+	font-weight: 700;
+font-size: 48px;
+line-height: 70px;
+color: #000000;
+max-width: 410px;
+}
+.banner-content h1 span{
+	color: #21B573;
+	font-weight: 700;
+font-size: 48px;
+line-height: 70px;
+}
+.banner-content p{
+	font-weight: 400;
+font-size: 16px;
+line-height: 36px;
+color: #6C6B6B;
+margin: 20px 0;
+    max-width: 400px;
+}
+.banner-content img{}
+.banner-content .btn{
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transition-duration: 0.3s;
+}
+.banner-content .btn:hover{
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.feature_section{
+	    padding: 50px 0px;
+}
+.col-1-4 {
+    max-width: 25%;
+    flex-basis: 25%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.feature {
+    background: #F8FFFB;
+    border-radius: 10px;
+    text-align: center;
+    padding: 45px 15px;
+    transition-duration: 0.3s;
+}
+.feature img{
+	height: 75px;
+}
+.feature h3{
+	font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #413960;
+}
+.feature p{
+	font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #585859;
+}
+
+.feature:hover{
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+	background-color: white;
+}
+
+
+
+@media(max-width: 1250px){
+	.container{
+		width: 1000px;
+
+	}
+	.feature img {
+    height: 65px;
+	}
+	.feature h3 {
+    font-size: 20px;
+    line-height: 32px;
+
+}
+.feature {
+    border-radius: 10px;
+    padding: 40px 10px;
+}
+.banner-content p {
+    margin: 10px 0;
+}
+}
+
+@media(max-width: 1050px){
+	.container{
+		width: 800px;
+
+	}
+	.banner-content h1 {
+    font-size: 40px;
+    line-height: 60px;
+    max-width: 362px;
+}
+.banner-content h1 span {
+    font-size: 40px;
+}
+.banner-content p {
+    font-size: 19px;
+    line-height: 30px;
+    max-width: 337px;
+}
+.feature_section {
+    padding: 35px 0px;
+}
+.feature h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+.feature p {
+    font-size: 13px;
+    line-height: 23px;
+}
+}
+
+
+@media(max-width: 850px){
+	.container{
+		width: 100%;
+		padding: 0 30px;
+		box-sizing: border-box;
+	}
+	.col-1-2 {
+    max-width: 100%;
+    flex-basis: 100%;
+}
+.banner-content {
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.banner-content img {
+    max-width: 400px;
+    margin: 40px 0px;
+}
+.banner-content h1 {
+    font-size: 33px;
+    line-height: 40px;
+    max-width: 298px;
+    margin: auto;
+}
+.banner-content h1 span {
+    font-size: 33px;
+}
+.col-1-4{
+	max-width: 40%;
+	flex-basis: 40%;
+}
+.feature_section .container{
+	justify-content: center;
+}
+}
+
+@media(max-width: 650px){
+	.logo{
+		max-width: 100%;
+		flex-basis: 100%;
+		text-align: center;
+
+	}
+	nav{
+		max-width: 100%;
+		flex-basis: 100%;
+
+	}
+	nav ul{
+		justify-content: center !important;
+	}
+	}
+.col-1-4{
+	max-width: 50%;
+}
+
+}
